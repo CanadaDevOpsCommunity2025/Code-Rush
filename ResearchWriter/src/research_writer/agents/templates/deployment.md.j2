@@ -1,0 +1,27 @@
+# Deployment Configuration
+
+{{ deployment }}
+
+## Docker Configuration
+```dockerfile
+{{ docker }}
+```
+
+{% if k8s %}
+## Kubernetes Configuration
+```yaml
+{{ k8s }}
+```
+{% endif %}
+
+## CI/CD Pipeline
+```yaml
+{{ ci_cd }}
+```
+
+## Environment Variables
+The following environment variables are required:
+
+{% for var in env_vars %}
+- `{{ var }}`
+{% endfor %}
