@@ -3,10 +3,10 @@ Canada DevOps Community of Practice - Toronto Hackathon Series - Team 11
 
 Project Name - Code Rush
 
-Team Mentor -
+Team Mentor - Ramchandran
 
 Participant Names - 
 
-     Team Lead - Suryaprakash Gangwar 
+     Team Lead - Ram 
      Team Members - Ranjana, Surya, Ramchandran, Rishi Juneja
 

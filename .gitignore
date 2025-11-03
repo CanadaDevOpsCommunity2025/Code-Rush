@@ -1,0 +1,123 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+*.pyc
+.python-version
+poetry.lock
+
+# Virtual environments
+venv/
+.venv/
+ENV/
+env/
+.env
+.envrc
+.direnv/
+pythonenv*
+pyvenv*/
+
+# Distribution / packaging
+*.manifest
+*.spec
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# IDEs and editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.classpath
+*.launch
+.settings/
+*.sublime-workspace
+*.sublime-project
+.spyderproject
+.spyproject
+.ropeproject
+.pycharm_helpers/
+.vscode-test/
+.pytest_cache/
+pyrightconfig.json
+
+# Operating System
+.DS_Store
+Thumbs.db
+*.log
+
+# Project specific
+documentation.md
+docs/_build/
+docs/auto_examples/
+docs/generated/
+docs/modules/
+models/*.gguf
+!models/.gitkeep
+*.md.backup
+generated_docs/
+analysis_results/
+.openai_cache/
+
+# Docker
+.docker/
+
+# Local development
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+profile_default/
+ipython_config.py
+*.ipynb_metadata/
+.jupyter/
+jupyter_cache/
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*.orig
+*~
+.temp/
+tmp/
+temp/

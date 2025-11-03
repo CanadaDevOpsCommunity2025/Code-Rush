@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  research-writer:
+    image: research-writer:latest
+    container_name: research-writer
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - PYTHONUNBUFFERED=1
+    # Command can be overridden via command line
+    command: ["--repo", "https://github.com/rchandranmani/Commerce", "--output", "/output/documentation.md"]
+    # Resource limits as per deployment requirements
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 4G
+        reservations:
+          cpus: '0.5'
+          memory: 2G
