@@ -1,0 +1,28 @@
+### Dependencies
+
+{% if dependencies.python %}
+#### Python Dependencies
+{% if dependencies.python.get('requirements.txt') %}
+From requirements.txt:
+```
+{% for dep in dependencies.python.requirements_txt %}
+{{ dep }}
+{% endfor %}
+```
+{% endif %}
+
+{% if dependencies.python.get('setup.py') %}
+{{ dependencies.python.setup_py }}
+{% endif %}
+
+{% if dependencies.python.get('pyproject.toml') %}
+{{ dependencies.python.pyproject_toml }}
+{% endif %}
+{% endif %}
+
+{% if dependencies.javascript %}
+#### JavaScript Dependencies
+{% if dependencies.javascript.get('package.json') %}
+{{ dependencies.javascript.package_json }}
+{% endif %}
+{% endif %}
