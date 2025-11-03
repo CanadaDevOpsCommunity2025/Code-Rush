@@ -12,13 +12,13 @@ class RepoDocumentationCrew:
         Initialize the documentation crew.
         
         Args:
-            api_key: Google API key for Gemini. If not provided, will look for GOOGLE_API_KEY in environment.
+            api_key: OpenAI API key. If not provided, will look for OPENAI_API_KEY in environment.
         """
         if api_key is None:
             load_dotenv()
-            api_key = os.getenv("GOOGLE_API_KEY")
+            api_key = os.getenv("OPENAI_API_KEY")
             if api_key is None:
-                raise ValueError("Google API key not found. Please set GOOGLE_API_KEY environment variable.")
+                raise ValueError("OpenAI API key not found. Please set OPENAI_API_KEY environment variable.")
         
         self.research_agent = ResearchAgent(api_key=api_key)
         self.writer_agent = WriterAgent(api_key=api_key)

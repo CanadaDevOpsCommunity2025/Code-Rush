@@ -10,13 +10,13 @@ class WriterAgent:
     """Agent responsible for writing documentation based on repository analysis."""
     
     def __init__(self, 
-                 api_key: str = None,
+    def __init__(self, api_key: str = None,
                  template_path: str = None):
         """
         Initialize the writer agent.
         
         Args:
-            api_key: Google API key for Gemini
+            api_key: OpenAI API key
             template_path: Optional path to custom templates directory
         """
         if api_key is None:

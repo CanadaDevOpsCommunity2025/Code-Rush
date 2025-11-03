@@ -21,6 +21,9 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
+*.pyc
+.python-version
+poetry.lock
 
 # Virtual environments
 venv/
@@ -28,6 +31,10 @@ venv/
 ENV/
 env/
 .env
+.envrc
+.direnv/
+pythonenv*
+pyvenv*/
 
 # Distribution / packaging
 *.manifest
@@ -68,8 +75,16 @@ Thumbs.db
 
 # Project specific
 documentation.md
+docs/_build/
+docs/auto_examples/
+docs/generated/
+docs/modules/
 models/*.gguf
 !models/.gitkeep
+*.md.backup
+generated_docs/
+analysis_results/
+.openai_cache/
 
 # Docker
 .docker/

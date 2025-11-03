@@ -19,6 +19,8 @@ A Python-based research and write agent that analyzes git repositories and gener
    - Set the `OPENAI_API_KEY` environment variable
    - Pass the API key directly using the `--api-key` argument
 
+Note: The project uses OpenAI's GPT models for analysis and documentation generation. Make sure you have a valid OpenAI API key and sufficient credits.
+
 ## Installation
 
 ```bash

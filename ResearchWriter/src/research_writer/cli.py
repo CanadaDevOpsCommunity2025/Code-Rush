@@ -23,7 +23,7 @@ def parse_args():
     
     parser.add_argument(
         "--api-key",
-        help="Google API key for Gemini. If not provided, will look for GOOGLE_API_KEY in environment."
+        help="OpenAI API key. If not provided, will look for OPENAI_API_KEY in environment."
     )
     
     return parser.parse_args()
@@ -36,15 +36,15 @@ def main():
         print(f"Error: Repository path does not exist: {args.repo}")
         return 1
     
-    # Load API key from environment if not provided
+        # Load API key from environment if not provided
     api_key = args.api_key
     if api_key is None:
         load_dotenv()
-        api_key = os.getenv("GOOGLE_API_KEY")
+        api_key = os.getenv("OPENAI_API_KEY")
         if api_key is None:
-            print("Error: Google API key not found. Please either:")
-            print("1. Set the GOOGLE_API_KEY environment variable")
-            print("2. Create a .env file with GOOGLE_API_KEY=your_key")
+            print("Error: OpenAI API key not found. Please either:")
+            print("1. Set the OPENAI_API_KEY environment variable")
+            print("2. Create a .env file with OPENAI_API_KEY=your_key")
             print("3. Provide the API key using --api-key argument")
             return 1
     

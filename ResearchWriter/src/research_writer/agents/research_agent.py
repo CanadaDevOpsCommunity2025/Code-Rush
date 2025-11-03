@@ -13,7 +13,7 @@ class ResearchAgent:
         Initialize the research agent.
         
         Args:
-            api_key: Google API key for Gemini
+            api_key: OpenAI API key
         """
         if api_key is None:
             load_dotenv()
