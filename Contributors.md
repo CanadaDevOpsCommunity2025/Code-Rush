@@ -1,5 +1,7 @@
 # DevOps GenAI Hackathon - 3rd November, 2025 - Contributors
-## Ranjana - Prepared the presentation for project and explored agents.Tried making the message rounter. worked on creating a files for reddis queue for dispatching tasks to right agent, but issue in deploying.
+
+## Ranjana - 
+Prepared the presentation for project and explored agents.Tried making the message rounter. worked on creating a files for reddis queue for dispatching tasks to right agent, but issue in deploying.
 
 ## Ram -Developement of the ResearchWriter component, implementing a sophisticated multi-agent system using CrewAI framework:
 - Designed and implemented three specialized AI agents:
@@ -17,7 +19,8 @@
   - Implemented environment management with python-dotenv
   - Set up proper project structure following Python best practices
 
-## Surya - Designed, implemented, and optimized a complete CI/CD pipeline using GitHub Actions to automate the build, test, and deployment process for containerized applications. Configured self-hosted GitHub runners on a local workstation to enable custom execution environments, providing full control over build dependencies, compute resources, and pipeline performance.
+## Surya - 
+Designed, implemented, and optimized a complete CI/CD pipeline using GitHub Actions to automate the build, test, and deployment process for containerized applications. Configured self-hosted GitHub runners on a local workstation to enable custom execution environments, providing full control over build dependencies, compute resources, and pipeline performance.
 
 Installed and configured Docker for containerization and Minikube to emulate a local Kubernetes environment for development and testing. The solution enables seamless packaging of application code into Docker images, pushing images to a container registry, and deploying workloads to the local Kubernetes cluster for validation.
 
